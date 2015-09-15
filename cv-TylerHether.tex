@@ -1,0 +1,221 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Tyler Duncan Hether}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{https://sites.google.com/site/buddingyeastbiologist/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{https://www.uidaho.edu/}{University of Idaho} \\
+  Bioinformatics \& Computational Biology \\
+  Life Sciences South 441D \\
+  PO Box 443051, Moscow, ID. 83844-3051
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (208) 885-8860 \\
+    Fax: &  (208) 885-7905 \\
+    Email: & \href{mailto:tyler.thether@uidaho.edu}{\tt thether@uidaho.edu} \\
+    Source Code: & \href{https://github.com/tylerhether}{\tt https://github.com/tylerhether} \\
+  \end{tabular}
+\end{minipage}
+
+
+%\section*{Personal}
+
+%\begin{itemize}
+%\item Born on September 29, 1895.
+%\item United States Citizen.
+%\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item Ph.D. Bioinformatics \& Computational Biology, University of Idaho. Expected May, 2016
+    \begin{itemize}
+    \item \emph{Dissertation:} ``The role of genetic interactions in adaptation''.
+    \item \emph{Committee:} P. Hohenlohe, P. Joyce, C. Parent, \& J. Foster.
+    \end{itemize}
+  \item M.S. Biology, University of Central Florida.
+    Received July, 2010
+    \begin{itemize}
+    \item \emph{Thesis:} ``Using landscape genetics to assess population connectivity in a habitat generalist''.
+    \end{itemize}
+  \item B.S. Biology, University of Central Florida.
+    Received December, 2006
+\end{itemize}
+
+
+\section*{Employment}
+
+\begin{itemize}
+\item University of Idaho 2010--2015.
+\item University of Central Florida 2006--2010.
+\end{itemize}
+
+\section*{Research Support}
+\begin{itemize}
+\item Eugene Magelby Natural Sciences Scholarship, 2015--2016
+\item NSF DDIG ``The role of genetic interactions in adaptation'', 2014--2016
+\item Bioinformatics \& Computational Biology Fellowship ``Develop computational tools to analyze recombination rate variation from low-coverage sequence data'', 2014--2016
+\item NSF BEACON Graduate Fellowship ``The Genetic Architecture of Multi-dimensional Adaptation \& Speciation'', 2011--2013
+\item Sigma Xi Grants-in-Aid of Research ``Evaluating the role of landscape features on gene flow'', 2008-2009
+\end{itemize}
+
+\section*{Programming \& Scripting Languages}
+\begin{itemize}
+\item R, C++, perl, python, \LaTeX , mathematica, \& bash
+\end{itemize}
+
+\section*{Publications}
+
+\begin{itemize}
+\item Hand, B.K, T.D. Hether, R.P. Kovach, C.C. Muhlfeld, S.J. Amish, M.C. Boyer, S.M. O'Rourke, M.R. Miller, W.H. Lowe, P.A. Hohenlohe, \& G. Lukart. 2015. Genomics and introgression: Discover and mapping of thousands of species-diagnoistic SNPs using RAD sequencing.  Current Zoology 61 (1): 146-154
+
+\item Hether, T.D. and P.A. Hohenlohe. Genetic regulatory network motifs constrain adaptation through curvature in the landscape of mutational (co)variance. Evolution (68) 4: 950-964.
+
+\item Rosenblum, E.B., B.A. Sarver, J.W. Brown, S. Des Roches, K. M. Hardwick, T.D. Hether, J.M. Eastman, M.W. Pennell, and L.J. Harmon. 2011. Goldilocks meets Santa Rosalia: an ephemeral speciation model explains patterns of diversification across time scales. Evolutionary Biology. 39, number 2, 255-261.
+
+\item Hether, T.D. and E.A. Hoffman. Machine learning identifies specific habitats associated with genetic connectivity in \emph{Hyla squirella}. 2012. J. Evolutionary Biology 25, issue 6, 1039-1052 
+
+\item Degner, J.F., D.M. Silva, T.D. Hether, J.M. Daza, E.A. Hoffman. 2010. Fat frogs, mobile genes: unexpected phylogeographic patterns for the ornate chorus frog (\emph{Pseudacris ornata}). Molecular Ecology 19, issue 12, 2501-2515.
+
+\item Jenkins D.G,..., T.D. Hether, et al. 2010  Isolation by distance: 20th century relic or reference standard for 21st century landscape genetics?  Ecography 33, issue 2, 315-320.
+
+\item Hether, T. D. and E. A. Hoffman. Characterization of five dinucleotide and six tetranucleotide polymorphic microsatellite loci for the squirrel treefrog (\emph{Hyla squirella}).  Appeared in D. Abdoullaye, I. Acevedo, A.A. Adebayo, et al. 2010. Permanent Genetic Resources added to Molecular Ecology Resources Database 1 August 2009-30 September 2009. Molecular Ecology Resources 10, 232-236.
+
+\item Degner, J. F., T. D. Hether, and E. A. Hoffman. 2009. Eight novel tetranucleotide and five cross-species dinucleotide microsatellite loci for the ornate chorus frog (\emph{Pseudacris ornata}). Molecular Ecology Resources 9, 622-624.
+
+
+\end{itemize}
+
+%\subsection*{Proceedings}
+
+%\begin{itemize}
+%\item A generalized T-Test and measure of multivariate dispersion,
+%  Proc. Second Berkeley Symposium of Mathematical Statistics and
+%  Probability, 1951.
+%\end{itemize}
+
+
+\section*{Talks \& Presentations}
+
+\begin{itemize}
+\item University of Idaho's IBEST Science Update. Talk title: Experimental Evolution of Local Adaptation in Yeast, 2014.
+\item University of Idaho's College of Science Research Exposition 2014. Poster title: ``Hidden Markov Models Aid in Identifying Recombination Rate and Gene Conversion Hotspots in Low-Coverage DNA Sequencing of \textit{Saccharomyces cerevisiae} Crosses''. Primary author, 2014.
+\item Evolution. Poster title: ``Genetic network architecture, mutation rate, and correlational selection affect G-matrix stability''. Primary author, 2014.
+\item Evo-Wibo. Poster title: ``Genetic network architecture, mutation rate, and correlational selection affect G-matrix stability''. Primary author, 2014.
+\item BEACON seminar series. Talk title:``Recombination rate and gene conversion heterogeneity: implications for `genomic islands' of divergence''. Primary author, 2013.
+\item Evolution. \textit{Hamilton Award Nominee}. Presentation Title: ``Genetic regulatory motifs constrain adaptation through curvature in the landscape of mutational variation'' Primary author, 2013.
+\item BEST Science Exposition, University of Idaho. Poster Title: ``Spatial autocorrelation structure of genomic sequence divergence under neutrality using coalescent simulations'' Contributing author, 2012.
+\item BEST Science Exposition, University of Idaho, Idaho. Poster Title: ``Genetic Regulatory Networks, G-matrices, \& Adaptive Divergence'' Primary author, 2012.
+\item Evolution. Poster Title: ``Genetic Network Architecture and the G-matrix Under Divergent Selection'' Primary author, 2012.
+\item Seventh Annual Southeastern Ecology and Evolution Conference (SEEC), Atlanta, Georgia. Presentation Title: ``Using landscape genetics to evaluate habitat permeability in an abundant frog'' Primary author, 2010.
+\item Biogeography Conference, Baja, Mexico. Poster Title: ``Isolation by distance is dead: long live IBD'' Contributing author, 2009.
+\item Sixth Annual Southeastern Ecology and Evolution Conference (SEEC), Gainesville, Florida. Poster Title: ``Is clinal variation in skin color of the ornate chorus frog (\textit{Pseudacris ornata}) driven by natural selection?'' Primary author, 2009.
+\item Evolution.  Presentation Title: ``Testing for selection along a cline of color change in a polymorphic frog'' Contributing author, 2008.
+\end{itemize}
+
+\section*{Educational Outreach}
+\begin{itemize}
+\item ``NIMBioS Evolutionary Quantitative Genetics Workshop'', 2015 -- Helped teach quantitative genetics to graduate students and postdocs
+\item ``Creatures of the night'', 2011 -- Helped teach chiropteran natural history elementary childern
+\item ``White Sands Institute'', 2011 -- Helped teach lizard evolution to middle school children
+\item ``Save the Frogs Day'', 2011, Helped teach amphibian decline awareness and habitat requirements to preschool children. 
+\end{itemize}
+
+\section*{Journal Referee}
+\begin{itemize}
+\item Biological Journal of the Linnean Society, Evolution, \& Molecular Ecology
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
