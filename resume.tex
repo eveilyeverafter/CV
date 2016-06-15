@@ -1,0 +1,216 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Tyler}{Hether}
+\title{Resume }                               % optional, remove / comment the line if not wanted
+\address{408 West $4^{th}$ Avenue // Eugene Oregon, 97402}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{Skype: Tyler.Hether}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{208 301 3259}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{tyler.hether@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://github.com/tylerhether}                         % optional, remove / comment the line if not wanted
+% \extrainfo{Skype: Tyler.Hether}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Recent graduate in Bioinformatics and Computational Biology. Interested in the interface between biology, computer science, and math to solve real-world biological problems. Self-motivated person who also enjoys working together as a team.}
+
+\section{Previous Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{June 2016 -- present}{Postdoctoral Associate}{University of Oregon}{Eugene, Oregon}{}{\vspace{3pt}I am responsible for contributing and creating bioinformatic pipelines and programming solutions for a range of population genomics problems.}}
+
+\vspace{6pt}
+
+\item{\cventry{August 2010--May 2016}{Research Assistant \& Graduate Student}{University of Idaho}{Moscow, Idaho}{}{\vspace{3pt}I was a graduate student in the Bioinformatics \& Computational Biology program under the tutelage of Paul Hohenlohe. I examined the genomic response to local adaptation by experimentally evolving populations of budding yeast (\textit{Saccharomyces cerevisiae}), built a statistical toolkit (i.e., R package) for analyzing recombination rates in low-coverage sequence data, and expanded on classical models of quantitative genetics using a network theory paradigm.}}
+
+\vspace{6pt}
+
+\item{\cventry{August 2007--July 2010}{Research Assistant \& Graduate Student}{University of Central Florida}{Orlando, Florida}{}{\vspace{3pt}I primarily worked on using molecular techniques to isolate and characterize molecular markers (microsatellites) from a range of species. I also used machine learning techniques to identify likely habitats associated with genetic connectivity in frogs.}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2016}{Bioinformatics \& Computational Biology}{Ph.D. | University of Idaho}{Moscow}{\textit{Eugene Magelby Natural Sciences Scholar}}{\emph{Dissertation:} ``Genetic Networks, Adaptation,
+  \& the Evolution of Genomic Islands of Divergence''}}
+
+\item{\cventry{2010}{Biology}{M.S. | University of Central Florida}{Orlando}{}{\emph{Thesis:} ``Using landscape genetics to assess population connectivity in a habitat generalist''}}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2006}{Biology}{B.S. | University of Central Florida}{Orlando}{}{}}  % arguments 3 to 6 can be left empty
+
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Notable Github Repositories}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{HMMancestry:} \textit{'R package using the Forward-Backward algorithm to infer genotypes, recombination hotspots, and gene conversion tracts from low-coverage next-generation sequence data'}
+
+\vspace{3pt}
+
+\small{I created the R package HMMancestry to infer recombination breakpoints, gene conversion tracts, hotspots, and coldspots in high-throughput, next-generation sequence data, even when sequencing coverage is relatively low. This package leverages nearby genetic content to infer local ancestry using a `Hidden Markov Model'. This package can analyze both haploid and diploid individuals and has built-in simulating and maximum-likelihood estimating functions for added user flexibility.}}
+
+%\newpage
+
+\item{\textbf{Flip2BeRAD:} \textit{'Python and C++ utilities for flipping RADseq reads'}
+
+\vspace{3pt}
+
+\small{I built a utility for flipping the forward and reverse raw reads generated from paired-end sequencing when the sample barcode is found on the reverse (paired-end) read. For some RADseq protocols (e.g., BestRAD), the barcode plus cut site combination can occur on the reverse read. This is problematic when downstream programs (e.g., stacks) require that these be on the forward read. I built two flavors of Flip2BeRAD: a fuller featured Python script and a quicker C++ variant.}}
+
+\vspace{6pt}
+
+\item{\textbf{NetworkEvolution:}\textit{'Evolving networks in a quantitative genetics framework'}
+
+\vspace{3pt}
+
+\small{I created NetworkEvolution, a C++ program used to simulate two quantitative traits for a user-defined number of populations evolving to identical fitness optima under a quantitative genetics framework. A key feature of NetworkEvolution is the ability to simulate two classes of mutations: those in the allelic (coding) alleles and those in the cis-regulatory regions of a two gene genetic network.}}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} in descending order of expertise, R, bash/linux, \LaTeX, C++, Python, Mathematica, \& Perl 
+
+\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} Most MS Office products including MS Word and MS Excel. Cloud-based word processing (Google Drive suite of tools).
+
+\vspace{6pt}
+
+\item \textbf{General Business Skills:} Good presentation skills, Works well in MS Powerpoint, \LaTeX's Beamer class, and others. 
+
+\vspace{6pt}
+
+\item \textbf{Other:} Advanced R plotting skills using the ggplot2 library. Experience with high performance computing in R (via Rcpp) and reproducibility of documents, results, and reports using Sweave.  Experience in molecular and microbiology laboratory bench work. Experience presenting and disseminating findings at scientific conferences as well as in smaller groups and one-on-one. 
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{Data transparency, open source code, and reproducibility. The expression 'standing on the shoulders of giants' is most applicable in science and coding when you can actually use previous data and analytical tools.}
+
+\vspace{6pt}
+
+\item{While technology is great, I also like to get outdoors. Road cycling is one of my favorite activities. Twice I've completed the Trail of the Coeur d'Alene -- a 72 mile bike trail that spans Idaho's panhandle from Washington to Montana. Hiking is another favorite pastime, both because it immerses one with nature as well lends itself to great landscape photography opportunities.}
+
+% \vspace{6pt}
+
+% \item{Thing 3.I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
+
+\end{itemize}
+
+\section{References}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item{Up to 4 references available on request.}
+
+\end{itemize}
+
+\section{Scientific Publications}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item{Summary: \# of Citations = 160 |  h-index = 5 | i10-index = 5}
+\vspace{6pt}
+\item{For a list of publications, please visit https://scholar.google.com/citations?user=St7QVnoAAAAJ\&hl=en}
+
+
+\end{itemize}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
