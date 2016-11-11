@@ -8,6 +8,9 @@
 
 \documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
 
 
 % modern themes
@@ -21,7 +24,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.85]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -68,53 +71,84 @@
 %\vspace{4pt}
 
 \begin{itemize}
+\item{
+\centering
+  \begin{tabular}{p{14.4cm}r}
+\textbf{Ph.D, Bioinformatics \& Computational Biology} & University of Idaho, 2016\\
+``Genetic Networks, Adaptation, \& the Evolution of Genomic Islands of Divergence'' & \\
+  \end{tabular}
+}
 
-\item{\cventry{2016}{Bioinformatics \& Computational Biology}{Ph.D. | University of Idaho}{Moscow, Idaho}{\textit{Eugene Magelby Natural Sciences Scholar}}{\emph{Dissertation:} ``Genetic Networks, Adaptation,
-  \& the Evolution of Genomic Islands of Divergence''}}
+\item{
+\centering
+  \begin{tabular}{p{13cm}r}
+\textbf{M.S., Biology} & University of Central Florida, 2010\\
+``Using landscape genetics to assess population connectivity in a habitat generalist'' & \\
+  \end{tabular}
+}
 
-\item{\cventry{2010}{Biology}{M.S. | University of Central Florida}{Orlando, Florida}{}{\emph{Thesis:} ``Using landscape genetics to assess population connectivity in a habitat generalist''}}  % arguments 3 to 6 can be left empty
-
-\item{\cventry{2006}{Biology}{B.S. | University of Central Florida}{Orlando, Florida}{}{}}  % arguments 3 to 6 can be left empty
-
-%\item{\cventry{2003}{Associate of Arts, Honors}{A.A. | Daytona Beach State College}{Daytona Beach}{}{}}  % arguments 3 to 6 can be left empty
+\item{
+\centering
+  \begin{tabular}{p{13cm}r}
+\textbf{B.S., Biology} & University of Central Florida, 2010\\
+  \end{tabular}
+}
 
 \end{itemize}
 
 \section{Employment}
 
 %\vspace{4pt}
-
 \begin{itemize}
 
-\item{\cventry{June 2016 -- present}{Postdoctoral Associate \& Bioinformatics Data Scientist}{University of Oregon}{Eugene, Oregon}{}{\vspace{3pt}I contribute to and create bioinformatic workflows and programming solutions for a range of biological questions related to microbial metagenomics, gene regulatory network and expression changes, nematode genetic diversity, and reduced representation DNA sequencing.}}
+\item{
+\centering
+  \begin{tabular}{p{15cm}r}
+\textbf{University of Oregon} & Eugene, Oregon\\
+\textit{Postdoctoral Associate \& Bioinformatics Data Scientist} & June 2016 -- present \\
+  \end{tabular}
+}
+\\
+I contribute to and create bioinformatic workflows and programming solutions for a range of biological questions related to microbial metagenomics, gene regulatory network and expression changes, nematode genetic diversity, and reduced representation DNA sequencing.
+\vspace{4pt}
 
-%\vspace{4pt}
+\item{
+\centering
+  \begin{tabular}{p{14.2cm}r}
+\textbf{University of Idaho} & Moscow, Idaho\\
+\textit{Research Assistant \& Graduate Student} & August 2010 -- May 2016 \\
+  \end{tabular}
+}
+\\
+I examined the genomic response to environmental stress by experimentally evolving populations of budding yeast, built a statistical toolkit -- a Hidden Markov Model-based R package -- for analyzing meiotic recombination rates from low-coverage next-generation sequence data, and expanded on classical models of quantitative genetics using a network theory paradigm.
+\vspace{4pt}
 
-\item{\cventry{August 2010 -- May 2016}{Research Assistant \& Graduate Student}{University of Idaho}{Moscow, Idaho}{}{\vspace{3pt}I examined the genomic response to environmental stress by experimentally evolving populations of budding yeast, built a statistical toolkit -- a Hidden Markov Model-based R package -- for analyzing meiotic recombination rates from low-coverage next-generation sequence data, and expanded on classical models of quantitative genetics using a network theory paradigm.}}
-
-%\vspace{4pt}
-
-\item{\cventry{August 2007 -- July 2010}{Research Assistant \& Graduate Student}{University of Central Florida}{Orlando, Florida}{}{\vspace{3pt}I used molecular techniques to isolate and characterize molecular markers (microsatellites) from a range of species. I also used machine learning algorithms to identify likely habitats associated with genetic connectivity in frogs under a landscape genetics framework.}}
+\item{
+\centering
+  \begin{tabular}{p{14.2cm}r}
+\textbf{University of Central Florida} & Orlando, Florida \\
+\textit{Research Assistant \& Graduate Student} & August 2007 -- July 2010 \\
+  \end{tabular}
+}
+\\
+I isolated and characterized microsatellite markers for a range of species and identified landscape correlates to genetic connectivity between frog sub-populations using machine learning algorithms. 
 
 \end{itemize}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \section{Expertise and Interests}
-
-Data Science \ding{118} Genomics \ding{118} Ancestry \ding{118} Recombination \ding{118} Bioinformatics \ding{118} Scalability \ding{118} Hidden Markov Models \ding{118} Molecular Lab Methods \ding{118} Genetic Engineering \ding{118} Molecular Evolution \ding{118} Experimental Evolution \ding{118} RNA sequencing \ding{118} R \ding{118} Rcpp \ding{118} Sweave \ding{118} Genetic Architecture \ding{118} Data Visualization \ding{118} Quantitative Genetics
+Data Science \ding{118} Genomics \ding{118} Recombination \ding{118} Scalability \ding{118} HMMs  \ding{118} Genetic Engineering \ding{118} Molecular Evolution \ding{118} Experimental Evolution \ding{118} RNA sequencing \ding{118} R \ding{118} Rcpp \ding{118} Genetic Architecture \ding{118} Data Visualization \ding{118} Quantitative Genetics
 %\vspace{5pt}
 
+\section{Select Software on Github}
 
-\section{Select Products on Github}
-
-%\vspace{4pt}
 
 \begin{itemize}
 
 \item{\textbf{HMMancestry.} \textit{'R package using the Forward-Backward algorithm to infer genotypes, recombination hotspots, and gene conversion tracts from low-coverage next-generation sequence data'}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \small{I created the R package HMMancestry to infer recombination breakpoints, gene conversion tracts, hotspots, and coldspots in high-throughput, next-generation sequence data, even when sequencing coverage is relatively low. This package leverages nearby genetic content to infer local ancestry using a `Hidden Markov Model'. This package can analyze both haploid and diploid individuals and has built-in simulating and maximum-likelihood estimating functions for added user flexibility.}}
 
@@ -122,15 +156,15 @@ Data Science \ding{118} Genomics \ding{118} Ancestry \ding{118} Recombination \d
 
 \item{\textbf{Flip2BeRAD.} \textit{'Python and C++ utilities for flipping RADseq reads'}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \small{I built a utility for flipping the forward and reverse raw reads generated from paired-end sequencing when the sample barcode is found on the reverse (paired-end) read. For some RADseq protocols (e.g., BestRAD), the barcode plus cut site combination can occur on the reverse read. This is problematic when downstream programs (e.g., stacks) require that these be on the forward read. I built two flavors of Flip2BeRAD: a fuller featured Python script and a quicker C++ variant.}}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \item{\textbf{NetworkEvolution.}\textit{'Evolving networks in a quantitative genetics framework'}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \small{I created NetworkEvolution, a C++ program used to simulate two quantitative traits for a user-defined number of populations evolving to identical fitness optima under a quantitative genetics framework. A key feature of NetworkEvolution is the ability to simulate two classes of mutations: those in the allelic (coding) alleles and those in the cis-regulatory regions of a two gene genetic network.}}
 
@@ -138,25 +172,30 @@ Data Science \ding{118} Genomics \ding{118} Ancestry \ding{118} Recombination \d
 
 \section{Technical \& Personal Skills}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \begin{itemize}
 
-\item \textbf{Programming Languages.} In descending order of expertise: R, bash/linux, \LaTeX, C++, Python, Mathematica, and Perl. Actively learning: Java and Scala. 
+\item \textbf{Programming Languages.} In descending order of expertise: R, bash/linux, \LaTeX, C++, Python, Mathematica, and Perl. Actively learning: Java and Scala.
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \item \textbf{Industry Software Skills.} Most MS Office products including MS Word and MS Excel. Cloud-based word processing (Google Drive suite of tools).
 
-%\vspace{4pt}
+\vspace{4pt}
 
-\item \textbf{General Business Skills.} Good presentation skills, Works well in MS Powerpoint and \LaTeX's Beamer class. 
-
-%\vspace{4pt}
-
-\item \textbf{Other.} Experience with high performance computing in R (via Rcpp) and reproducibility of documents, results, and reports using Sweave.  Experience in molecular and microbiology laboratory bench work. Experience presenting and disseminating findings at scientific conferences as well as in smaller groups and one-on-one. 
+\item \textbf{Other.} Experience with high performance computing in R (via Rcpp) and reproducibility of documents, results, and reports using Sweave.  Experience in molecular and microbiology laboratory bench work. Experience presenting and disseminating findings at scientific conferences as well as in smaller groups and one-on-one.
 
 \end{itemize}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+
+\bibliographystyle{ieeetr}
+\bibliography{myrefs}
 
 \section{Other Interests \& Extracurricular Activities}
 
@@ -164,66 +203,29 @@ Data Science \ding{118} Genomics \ding{118} Ancestry \ding{118} Recombination \d
 
 \begin{itemize}
 
-%\item{\textbf{Data transparency, open source code, and reproducibility.} The expression 'standing on the shoulders of giants' is most applicable in science and coding when you can actually use previous data and analytical tools.}
+\item{\textbf{Data transparency, open source code, and reproducibility.} The expression 'standing on the shoulders of giants' is most applicable in science and coding when you can actually use previous data and analytical tools.}
 
-%\vspace{6pt}
+\vspace{4pt}
 
 \item{\textbf{Big data.} What happens when data gets really large and needs to be summarized in real-time? Recently, I've been learning how to use Apache Kafka and Twitter's streaming API to analyze gigabytes of local or streaming social media data efficiently. While it's a hobby of mine, these skills could have numerous industrial applications.}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \item{\textbf{Data visualization.} Distilling large amounts of data down to make meaningful inferences is as much an art as it is a science. To this end, I employ a variety of visualization and statistical packages (e.g., ggplot2, dplyr) in my daily work flow.}
 
-%\vspace{4pt}
+\vspace{4pt}
 
 \item{\textbf{Outdoors.} While technology is great, I also like to get outdoors. Road cycling is one of my favorite activities. My favorite ride is the Trail of the Coeur d'Alene -- a pristine 72 mile bike trail that spans Idaho's panhandle from Washington to Montana where moose outnumber people. Hiking is another favorite pastime, both because it immerses one with nature as well as lends itself to great landscape photography opportunities.}
 
-% \vspace{6pt}
+\vspace{4pt}
 
 % \item{Thing 3.I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
 
 \end{itemize}
 
-%\section{References}
-
-%\vspace{6pt}
- 
-%\begin{itemize}
-
-%\item{References available upon request.}
-
-%\end{itemize}
-
-\section{Scientific Publications}
-
-%\vspace{4pt}
- 
-\begin{itemize}
-
-\item{\textbf{Summary.} \# first authored = 4 | \# co-authored = 5 | \# citations = 184 |  h-index = 6}
-%\vspace{4pt}
-\item{\textbf{Details.} Please click or visit \href{https://scholar.google.com/citations?user=St7QVnoAAAAJ\&hl=en}{\textit{https://scholar.google.com/citations?user=St7QVnoAAAAJ\&hl=en}}}
-
-
-\end{itemize}
 
 
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
 
 %-----       letter       ---------------------------------------------------------
 
